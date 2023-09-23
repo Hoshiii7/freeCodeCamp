@@ -1,0 +1,131 @@
+** start of undefined **
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Survey Form</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <h1 id="title">LinkedIN Survey</h1>
+      <p id="description">Thank you for your participation!</p>
+      <form id="survey-form" method="post">
+        <fieldset>
+          <label for="name-label" id="name-label" >Please enter your Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Full Name" required />
+          <label for="email-label" id="email-label">Please enter your Email:</label>
+          <input type="email" id="email" name="email" placeholder="Email Address" required />
+          <label for="username-label" >Please enter your LinkedIN Username:</label>
+          <input type="username" id="username" name="username" placeholder="LinkedIN Username" required />
+          <label for="number-label" id="number-label">Please enter your Age (in years):</label>
+          <input type="number" id="number" name="age" min="13" max="80" placeholder="Age" required />
+          </fieldset>
+        <fieldset>
+          <label for="dropdown">What is your level of education?</label>
+          <select id="dropdown" name="education">
+            <option value=""></option>
+            <option value="1">Primary School</option>
+            <option value="2">Secondary School</option>
+            <option value="3">Associate's Degree</option>
+            <option value="4">Bachelor's Degree</option>
+            <option value="5">Master's Degree</option>
+            <option value="6">Doctorate Degree</option>
+            <option value="7">Other</option>
+          </select>
+          </fieldset>
+          <fieldset>
+          <label for="status">Are you currently in schooling?</label>
+          <label for="c">
+            <input value="c" id="continuing" name="edu" type="radio" class="inline" />Yes, I am currently enrolled or being educated.
+            </label>
+          <label for "f">
+          <input value="f" id="finished" name="edu" type="radio" class="inline" />No, I am finished with education.</label>
+          <label for="other">If you have chosen other, please specify:</label>
+          <textarea id="other" name="other" rows="3" cols="30" placeholder="Trade School, Mentorship, etc..."></textarea>
+          </label>
+          </fieldset>
+          <label>
+            <input value="agree" id="agreement" type="checkbox" name="agreement" class="inline" required /> I allow my information to be processed for ecducational purposes only.
+          </label>
+          <label>
+            <input value="news" id="news" type="checkbox" name="news" class="inline" /> I would like to receive additional info based on my responses.
+          </label>
+          <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #0072bb;
+  color: #fffff2;
+  font-family: Verdana;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #f498ad;
+}
+
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+
+** end of undefined **
+
